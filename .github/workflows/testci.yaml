@@ -3,13 +3,13 @@ name: Test CI
 on:
   push:
     branches:
-      - master
+      - second
 
 jobs:
   test-job:
-    name: Test Job
+    name: Test Job for the second branch
     runs-on: ubuntu-latest
     steps:
     - name: Print a greeting
       run: |
-        echo Hello there!
+        echo Hello there on the second branch!
